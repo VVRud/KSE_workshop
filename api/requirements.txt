@@ -1,0 +1,4 @@
+fastapi-jwt-auth
+redis
+sqlalchemy
+psycopg2
