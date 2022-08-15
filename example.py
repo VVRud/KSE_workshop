@@ -108,17 +108,6 @@ resp = requests.delete(
 print(resp.status_code, resp.json())
 print("-" * 50)
 
-# GetUserdata
-print("-" * 20, "USER_DATA", "-" * 20)
-resp = requests.get(
-    BASE_URL.format(path="/data/user"),
-    headers={
-        "Authorization": f"Bearer {access_token}"
-    }
-)
-print(resp.status_code, resp.json())
-print("-" * 50)
-
 # RevokeRefresh
 print("-" * 20, "REVOKE_REFRESH", "-" * 20)
 resp = requests.delete(
